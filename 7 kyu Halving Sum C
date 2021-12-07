@@ -1,0 +1,10 @@
+unsigned halving_sum(unsigned n) 
+{
+  int sum = 0;
+  while (n>0)
+  {
+    sum += n;
+    n = ceil(n/2);
+  }    
+  return sum;
+}
