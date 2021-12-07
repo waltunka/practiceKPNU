@@ -1,0 +1,6 @@
+int goals(int laLigaGoals, int copaDelReyGoals, int championsLeagueGoals) {
+  int n;
+  
+ n = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  return n;
+}
