@@ -1,0 +1,13 @@
+int centuryFromYear(int year) 
+{
+  
+    int st=0;
+      while(year>0)
+        {
+        year= year -100;
+        st = st+1;
+      }
+  
+  
+  return st ;
+}
