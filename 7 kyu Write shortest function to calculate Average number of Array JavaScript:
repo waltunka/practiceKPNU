@@ -1,0 +1,1 @@
+function avg(a) {for(i=j=0; i in a; j+=a[i++]);return j/i}
