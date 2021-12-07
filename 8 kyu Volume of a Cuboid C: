@@ -1,0 +1,6 @@
+double getVolumeOfCubiod(double length, double width, double height)
+{
+  double volume;
+  volume = length * width * height;
+  return volume;
+}
