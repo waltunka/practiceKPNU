@@ -1,0 +1,23 @@
+public class FindOutlier{
+  static int find(int[] integers){
+   int remainder = 1;
+        int numOfOdds = 0;
+
+        for (int i = 0; i < 3; i++) {
+            if (Math.abs(integers[i] % 2) == 1) {
+                numOfOdds++;
+            }
+        }
+
+        if (numOfOdds > 1) {
+            remainder = 0;
+        }
+
+        for (int integer : integers) {
+            if (Math.abs(integer % 2) == remainder) {
+                return integer;
+            }
+        }
+
+        return 0;
+}}
