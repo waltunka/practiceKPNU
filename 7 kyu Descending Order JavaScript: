@@ -1,0 +1,9 @@
+function descendingOrder(n){
+ let convertN = n.toString();
+let newArray = convertN.split('');
+let sortArray = newArray.sort();
+let reverseArray = sortArray.reverse();
+let joinArray = sortArray.join('');
+let backNumber = Number(joinArray) ;
+return backNumber;
+}
