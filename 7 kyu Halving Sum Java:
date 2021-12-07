@@ -1,0 +1,12 @@
+import java.lang.Math;
+
+public class HalvingSum {
+  int halvingSum(int n) {
+    var sum = 0;
+    while(n > 0) {
+      sum += n;
+      n = (int) Math.floor(n/2);
+    }
+    return sum;
+  }
+}
