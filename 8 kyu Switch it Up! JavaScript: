@@ -1,0 +1,4 @@
+function switchItUp(number){
+const o = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
+  return o[number]
+}
