@@ -1,0 +1,13 @@
+int area_or_perimeter(int l , int w) {
+  float s, p;
+  if (l == w)
+    {
+    s= l*w;
+    return s;
+  } else
+    {
+    p= (l+w)*2;
+      return p;
+  }
+  
+}
