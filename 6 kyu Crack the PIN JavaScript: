@@ -1,0 +1,11 @@
+const crypto = require("crypto")
+const md5 = (contents) =>
+  crypto.createHash('md5').update(contents).digest('hex');
+function crack(hash){
+  for (let i = 0; i < 100000; i++) {
+    const pinToTest = i.toString().padStart(5, '0');
+    if (md5(pinToTest) === hash) {
+      return pinToTest;
+    }
+  }
+}
